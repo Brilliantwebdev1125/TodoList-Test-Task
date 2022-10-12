@@ -1,0 +1,17 @@
+@import 'styles/mixin/media';
+
+.App :global {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    padding-top: 24px;
+    h1.page-title {
+      font-size: 48px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 36px;
+    }
+  }
+}

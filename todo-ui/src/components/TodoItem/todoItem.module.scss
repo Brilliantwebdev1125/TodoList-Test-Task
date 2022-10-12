@@ -1,0 +1,40 @@
+.todoItem :global {
+  display: flex;
+
+  border-radius: 6px;
+  border: 2px solid var(--theme);
+  transition: all .2s ease-in;
+  padding: 8px 12px;
+
+  .checkbox {
+    width: 24px;
+  }
+
+  .todo-info {
+    margin-left: 8px;
+    .date-field {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--theme);
+    }
+  }
+
+  .icon-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 8px;
+
+    svg {
+      transition: all .2s ease-in-out;
+
+      &:hover {
+        fill: var(--primary);
+      }
+    }
+  }
+}
+
+.todoItem:hover {
+  border: 2px solid var(--primary);
+}

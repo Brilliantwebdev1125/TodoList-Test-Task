@@ -1,0 +1,45 @@
+button {
+  position: relative;
+  overflow: hidden;
+
+
+  cursor: pointer;
+  padding: 8px 20px;
+
+  border-radius: 6px;
+
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--button-text);
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 0px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 300ms;
+
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+
+  &.filled {
+    border: none;
+    background-color: var(--primary);
+  }
+
+  &.outlined {
+    border: 1px solid var(--primary);
+    background-color: white;
+    color: var(--primary)
+  }
+}
